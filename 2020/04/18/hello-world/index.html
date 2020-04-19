@@ -290,8 +290,9 @@
         clientSecret: '78de046a5c513d1b8b18a330a3aa7ad556f79bf9',
         repo: 'dante0713.github.io',
         owner: 'dante0713',
-        admin:  ['dante0713'],  
-        distractionFreeMode: false
+        admin: ['dante0713'],
+        id: window.location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
     })
     gitalk.render('gitalk-container')
 </script>
