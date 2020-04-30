@@ -93,6 +93,83 @@ ga('send', 'pageview');
     
     
     
+    <article id="post-30天API學習日誌-2" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-2/"
+    >30天API學習日誌 - 2</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-2/" class="article-date">
+  <time datetime="2020-04-30T09:56:37.000Z" itemprop="datePublished">2020-04-30</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>今天目標在把Laravel上線，決定先使用IP方式直連測試，安裝Laravel的過程中DigitalOcean的5美金專案，其記憶體空間不夠，升至15美金3GB才順利安裝好Laravel，否則composer完全動不起來:(<br>接下來進行Nginx的連接，設定檔位置deault在 /etc/nginx/sites-enabled/default &amp; /etcnginx/sites-available/default 記得nginx其中root位置不要進到http拜訪不到的資料夾中(例:root)<br>nginx找到public/index.php之後讀取的vendor資料夾找不到，才發現在使用指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer create-project laravel&#x2F;laravel your-project-name --prefer-dist</span><br></pre></td></tr></table></figure>
+
+<p>創立時發生出錯</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">laravel&#x2F;framework v7.8.1 requires ext-mbstring * -&gt; the requested PHP extension mbstring is missing from your system.</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>這類缺少PHP元件的問題都會導致laravel創立檔案時失去vendor資料夾，我們把缺的物件(php-mbstring,php-xml)用指令補齊</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install php-mbstring &amp; sudo apt-get install php-xml</span><br></pre></td></tr></table></figure>
+
+<p>到這裡已經出現img.1畫面，雖然Database還沒設定好但基本的Laravel資料已可看見，今天就先到這裡。</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/30%E5%A4%A9%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C/" rel="tag">30天學習日誌</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DigitalOcean/" rel="tag">DigitalOcean</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AF%A6%E4%BD%9C/" rel="tag">實作</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</article>
+    
     <article id="post-30天API學習日誌-1" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -142,6 +219,8 @@ ga('send', 'pageview');
     <footer class="article-footer">
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/30%E5%A4%A9%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C/" rel="tag">30天學習日誌</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DigitalOcean/" rel="tag">DigitalOcean</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AF%A6%E4%BD%9C/" rel="tag">實作</a></li></ul>
+
 
     </footer>
 
