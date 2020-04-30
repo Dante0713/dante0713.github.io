@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dante0713.github.io/"/>
-  <updated>2020-04-30T09:59:07.328Z</updated>
+  <updated>2020-04-30T10:00:58.036Z</updated>
   <id>https://dante0713.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-2/"/>
     <id>https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-2/</id>
     <published>2020-04-30T09:56:37.000Z</published>
-    <updated>2020-04-30T09:59:07.328Z</updated>
+    <updated>2020-04-30T10:00:58.036Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>今天目標在把Laravel上線，決定先使用IP方式直連測試，安裝Laravel的過程中DigitalOcean的5美金專案，其記憶體空間不夠，升至15美金3GB才順利安裝好Laravel，否則composer完全動不起來:(<br>接下來進行Nginx的連接，設定檔位置deault在 /etc/nginx/sites-enabled/default &amp; /etcnginx/sites-available/default 記得nginx其中root位置不要進到http拜訪不到的資料夾中(例:root)<br>nginx找到public/index.php之後讀取的vendor資料夾找不到，才發現在使用指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer create-project laravel&#x2F;laravel your-project-name --prefer-dist</span><br></pre></td></tr></table></figure><p>創立時發生出錯</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">laravel&#x2F;framework v7.8.1 requires ext-mbstring * -&gt; the requested PHP extension mbstring is missing from your system.</span><br><span class="line">......</span><br></pre></td></tr></table></figure><p>這類缺少PHP元件的問題都會導致laravel創立檔案時失去vendor資料夾，我們把缺的物件(php-mbstring,php-xml)用指令補齊</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install php-mbstring &amp; sudo apt-get install php-xml</span><br></pre></td></tr></table></figure><p>到這裡已經出現img.1畫面，雖然Database還沒設定好但基本的Laravel資料已可看見，今天就先到這裡。</p>]]></content>
     
@@ -34,6 +34,8 @@
     
     </summary>
     
+    
+      <category term="WEB API" scheme="https://dante0713.github.io/categories/WEB-API/"/>
     
     
       <category term="實作" scheme="https://dante0713.github.io/tags/%E5%AF%A6%E4%BD%9C/"/>
@@ -49,7 +51,7 @@
     <link href="https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/"/>
     <id>https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/</id>
     <published>2020-04-30T09:52:43.000Z</published>
-    <updated>2020-04-30T09:58:30.871Z</updated>
+    <updated>2020-04-30T10:01:09.990Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access console window下command，其過程總是延遲之後決定回頭設定ssh key(注意: 在建立好的Droplets (機器在此平台接稱為Droplets，很有趣的設定) 要前往ACCOUNT-&gt;Settings-&gt;Security-&gt;SSH keys當中設定 (很難找找很久))，但設定完總是無法遠端連線(這邊嘗試過ssh-keygen以及puttygen兩種方式，皆失敗)，一直出現<a href="https://blog.csdn.net/qq_36523839/article/details/78885216" target="_blank" rel="noopener">Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password)</a>警告，後來使用Ubuntu<br>+puttygen很快就解決了所有問題，也透過<a href="https://www.opencli.com/linux/ubuntu-16-04-install-nginx-mysql-php-lemp" target="_blank" rel="noopener">Ubuntu 16.04 安裝 Nginx, MySQL, PHP (LEMP)</a>這篇文章解決了 nginx-mysql-php 三項安裝，測試過後準備進行Laravel以及Vue.js框架建設，<br>但此時已經深夜2:19分，晚安。</p>]]></content>
     
@@ -62,6 +64,8 @@
     
     </summary>
     
+    
+      <category term="DigitalOcean" scheme="https://dante0713.github.io/categories/DigitalOcean/"/>
     
     
       <category term="實作" scheme="https://dante0713.github.io/tags/%E5%AF%A6%E4%BD%9C/"/>
@@ -77,7 +81,7 @@
     <link href="https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-0/"/>
     <id>https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-0/</id>
     <published>2020-04-30T09:47:48.000Z</published>
-    <updated>2020-04-30T09:50:18.376Z</updated>
+    <updated>2020-04-30T10:02:00.375Z</updated>
     
     <content type="html"><![CDATA[<h2 id="起由"><a href="#起由" class="headerlink" title="起由"></a>起由</h2><p>在公司低靡的環境下，試圖找尋學習的機會，並且在練習中習得新技能，目前舊有技能為以下列表</p><ul><li>模組化程式經驗</li><li>平台系統分析</li><li>使用Git版本控制經驗</li><li>使用(Docker container)PHP+Doctrine(ORM)+MySQL+MongoDB開發平台</li><li>利用Linux CentOS7 + Docker建立開發環境</li><li>使用NoSQL經驗(MongoDB)</li><li>Zend Framework 3 + Twig</li></ul><p>而希望在本次習得Web oauth REST API 以及 前端引擎Vue的運用方式。<br>此次預計建立一個影視版的人力銀行作為練習，架構為以下列表:</p><p>使用機器: DigitalOcean 15美元 Ubuntu 18.04.3<br>遠端操控: putty<br>前端引擎: vue =&gt; <a href="https://5xruby.tw/posts/how-to-create-maskmap-by-vuejs-and-osm/?fbclid=IwAR26ae2QYi_gMiUZxNHMGtD3gtMiQ7SvnveIr3lRdKNacPOg7olzrPXIWNc" target="_blank" rel="noopener">Vue 口罩地圖實作練習</a><br>後端web api: Laravel =&gt; <a href="https://laravel.tw/docs/4.2/quick#installation" target="_blank" rel="noopener">Laravel安裝</a></p>]]></content>
     
@@ -93,6 +97,8 @@
     
     </summary>
     
+    
+      <category term="實作起源" scheme="https://dante0713.github.io/categories/%E5%AF%A6%E4%BD%9C%E8%B5%B7%E6%BA%90/"/>
     
     
       <category term="實作" scheme="https://dante0713.github.io/tags/%E5%AF%A6%E4%BD%9C/"/>
