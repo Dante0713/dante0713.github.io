@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dante0713.github.io/"/>
-  <updated>2020-04-30T09:50:18.376Z</updated>
+  <updated>2020-04-30T09:55:25.833Z</updated>
   <id>https://dante0713.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>30天API學習日誌 - 1</title>
+    <link href="https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/"/>
+    <id>https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/</id>
+    <published>2020-04-30T09:52:43.000Z</published>
+    <updated>2020-04-30T09:55:25.833Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access console window下command，其過程總是延遲之後決定回頭設定ssh key(注意: 在建立好的Droplets (機器在此平台接稱為Droplets，很有趣的設定) 要前往ACCOUNT-&gt;Settings-&gt;Security-&gt;SSH keys當中設定 (很難找找很久))，但設定完總是無法遠端連線(這邊嘗試過ssh-keygen以及puttygen兩種方式，皆失敗)，一直出現<a href="https://blog.csdn.net/qq_36523839/article/details/78885216" target="_blank" rel="noopener">Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password)</a>警告，後來使用Ubuntu<br>+puttygen很快就解決了所有問題，也透過<a href="https://www.opencli.com/linux/ubuntu-16-04-install-nginx-mysql-php-lemp" target="_blank" rel="noopener">Ubuntu 16.04 安裝 Nginx, MySQL, PHP (LEMP)</a>這篇文章解決了 nginx-mysql-php 三項安裝，測試過後準備進行Laravel以及Vue.js框架建設，<br>但此時已經深夜2:19分，晚安。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Day-1&quot;&gt;&lt;a href=&quot;#Day-1&quot; class=&quot;headerlink&quot; title=&quot;Day 1&quot;&gt;&lt;/a&gt;Day 1&lt;/h2&gt;&lt;p&gt;原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access con
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>30天API學習日誌 - 0</title>
