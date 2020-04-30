@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dante0713.github.io/"/>
-  <updated>2020-04-19T04:41:54.005Z</updated>
+  <updated>2020-04-30T09:50:18.376Z</updated>
   <id>https://dante0713.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>30天API學習日誌 - 0</title>
+    <link href="https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-0/"/>
+    <id>https://dante0713.github.io/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-0/</id>
+    <published>2020-04-30T09:47:48.000Z</published>
+    <updated>2020-04-30T09:50:18.376Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="起由"><a href="#起由" class="headerlink" title="起由"></a>起由</h2><p>在公司低靡的環境下，試圖找尋學習的機會，並且在練習中習得新技能，目前舊有技能為以下列表</p><ul><li>模組化程式經驗</li><li>平台系統分析</li><li>使用Git版本控制經驗</li><li>使用(Docker container)PHP+Doctrine(ORM)+MySQL+MongoDB開發平台</li><li>利用Linux CentOS7 + Docker建立開發環境</li><li>使用NoSQL經驗(MongoDB)</li><li>Zend Framework 3 + Twig</li></ul><p>而希望在本次習得Web oauth REST API 以及 前端引擎Vue的運用方式。<br>此次預計建立一個影視版的人力銀行作為練習，架構為以下列表:</p><p>使用機器: DigitalOcean 15美元 Ubuntu 18.04.3<br>遠端操控: putty<br>前端引擎: vue =&gt; <a href="https://5xruby.tw/posts/how-to-create-maskmap-by-vuejs-and-osm/?fbclid=IwAR26ae2QYi_gMiUZxNHMGtD3gtMiQ7SvnveIr3lRdKNacPOg7olzrPXIWNc" target="_blank" rel="noopener">Vue 口罩地圖實作練習</a><br>後端web api: Laravel =&gt; <a href="https://laravel.tw/docs/4.2/quick#installation" target="_blank" rel="noopener">Laravel安裝</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;起由&quot;&gt;&lt;a href=&quot;#起由&quot; class=&quot;headerlink&quot; title=&quot;起由&quot;&gt;&lt;/a&gt;起由&lt;/h2&gt;&lt;p&gt;在公司低靡的環境下，試圖找尋學習的機會，並且在練習中習得新技能，目前舊有技能為以下列表&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模組化程式經驗&lt;/li&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="實作" scheme="https://dante0713.github.io/tags/%E5%AF%A6%E4%BD%9C/"/>
+    
+      <category term="30天學習日誌" scheme="https://dante0713.github.io/tags/30%E5%A4%A9%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C/"/>
+    
+      <category term="WEB API" scheme="https://dante0713.github.io/tags/WEB-API/"/>
+    
+      <category term="Vue" scheme="https://dante0713.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
