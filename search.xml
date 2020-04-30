@@ -51,7 +51,7 @@
 <li>Zend Framework 3 + Twig</li>
 </ul>
 <p>而希望在本次習得Web oauth REST API 以及 前端引擎Vue的運用方式。<br>此次預計建立一個影視版的人力銀行作為練習，架構為以下列表:</p>
-<p>使用機器: DigitalOcean 15美元 Ubuntu 18.04.3<br>遠端操控: putty<br>前端引擎: vue =&gt; <a href="https://5xruby.tw/posts/how-to-create-maskmap-by-vuejs-and-osm/?fbclid=IwAR26ae2QYi_gMiUZxNHMGtD3gtMiQ7SvnveIr3lRdKNacPOg7olzrPXIWNc" target="_blank" rel="noopener">Vue 口罩地圖實作練習</a><br>後端web api: Laravel =&gt; <a href="https://laravel.tw/docs/4.2/quick#installation" target="_blank" rel="noopener">Laravel安裝</a></p>
+<p>使用機器: DigitalOcean 15美元 Ubuntu 18.04.3<br>遠端操控: putty<br>前端引擎: vue =&gt; <a href="https://5xruby.tw/posts/how-to-create-maskmap-by-vuejs-and-osm/?fbclid=IwAR26ae2QYi_gMiUZxNHMGtD3gtMiQ7SvnveIr3lRdKNacPOg7olzrPXIWNc" target="_blank" rel="noopener">Vue 口罩地圖實作練習</a><br>後端web api: Laravel =&gt; <a href="https://laravel.tw/docs/4.2/quick#installation" target="_blank" rel="noopener">Laravel安裝</a>, <a href="https://www.youtube.com/watch?v=6qfE-lwRLuY&list=PL8p2I9GklV44rius9tPPXxPnuH0Yb27B4" target="_blank" rel="noopener">Laravel WEB API Tutorial</a></p>
 ]]></content>
       <categories>
         <category>實作起源</category>
