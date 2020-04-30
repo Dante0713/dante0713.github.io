@@ -125,7 +125,7 @@ ga('send', 'pageview');
       
 
       
-      <h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>今天目標在把Laravel上線，決定先使用IP方式直連測試，安裝Laravel的過程中DigitalOcean的5美金專案，其記憶體空間不夠，升至15美金3GB才順利安裝好Laravel，否則composer完全動不起來:(<br>接下來進行Nginx的連接，設定檔位置deault在 /etc/nginx/sites-enabled/default &amp; /etcnginx/sites-available/default 記得nginx其中root位置不要進到http拜訪不到的資料夾中(例:root)<br>nginx找到public/index.php之後讀取的vendor資料夾找不到，才發現在使用指令</p>
+      <h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>今天目標在把Laravel上線，決定先使用IP方式直連測試，安裝Laravel的過程中DigitalOcean的5美金專案，其記憶體空間不夠，升至15美金3GB才順利安裝好Laravel<a id="more"></a>，否則composer完全動不起來:(<br>接下來進行Nginx的連接，設定檔位置deault在 /etc/nginx/sites-enabled/default &amp; /etcnginx/sites-available/default 記得nginx其中root位置不要進到http拜訪不到的資料夾中(例:root)<br>nginx找到public/index.php之後讀取的vendor資料夾找不到，才發現在使用指令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer create-project laravel&#x2F;laravel your-project-name --prefer-dist</span><br></pre></td></tr></table></figure>
 
 <p>創立時發生出錯</p>

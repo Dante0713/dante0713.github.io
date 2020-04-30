@@ -3,7 +3,7 @@
   <entry>
     <title>30天API學習日誌 - 2</title>
     <url>/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-2/</url>
-    <content><![CDATA[<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>今天目標在把Laravel上線，決定先使用IP方式直連測試，安裝Laravel的過程中DigitalOcean的5美金專案，其記憶體空間不夠，升至15美金3GB才順利安裝好Laravel，否則composer完全動不起來:(<br>接下來進行Nginx的連接，設定檔位置deault在 /etc/nginx/sites-enabled/default &amp; /etcnginx/sites-available/default 記得nginx其中root位置不要進到http拜訪不到的資料夾中(例:root)<br>nginx找到public/index.php之後讀取的vendor資料夾找不到，才發現在使用指令</p>
+    <content><![CDATA[<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>今天目標在把Laravel上線，決定先使用IP方式直連測試，安裝Laravel的過程中DigitalOcean的5美金專案，其記憶體空間不夠，升至15美金3GB才順利安裝好Laravel<a id="more"></a>，否則composer完全動不起來:(<br>接下來進行Nginx的連接，設定檔位置deault在 /etc/nginx/sites-enabled/default &amp; /etcnginx/sites-available/default 記得nginx其中root位置不要進到http拜訪不到的資料夾中(例:root)<br>nginx找到public/index.php之後讀取的vendor資料夾找不到，才發現在使用指令</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">composer create-project laravel&#x2F;laravel your-project-name --prefer-dist</span><br></pre></td></tr></table></figure>
 
 <p>創立時發生出錯</p>
@@ -26,7 +26,9 @@
   <entry>
     <title>30天API學習日誌 - 1</title>
     <url>/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/</url>
-    <content><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access console window下command，其過程總是延遲之後決定回頭設定ssh key(注意: 在建立好的Droplets (機器在此平台接稱為Droplets，很有趣的設定) 要前往ACCOUNT-&gt;Settings-&gt;Security-&gt;SSH keys當中設定 (很難找找很久))，但設定完總是無法遠端連線(這邊嘗試過ssh-keygen以及puttygen兩種方式，皆失敗)，一直出現<a href="https://blog.csdn.net/qq_36523839/article/details/78885216" target="_blank" rel="noopener">Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password)</a>警告，後來使用Ubuntu<br>+puttygen很快就解決了所有問題，也透過<a href="https://www.opencli.com/linux/ubuntu-16-04-install-nginx-mysql-php-lemp" target="_blank" rel="noopener">Ubuntu 16.04 安裝 Nginx, MySQL, PHP (LEMP)</a>這篇文章解決了 nginx-mysql-php 三項安裝，測試過後準備進行Laravel以及Vue.js框架建設，<br>但此時已經深夜2:19分，晚安。</p>
+    <content><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access console window下command，其過程總是延遲之後決定回頭設定ssh key</p>
+<a id="more"></a>
+<p>(注意: 在建立好的Droplets (機器在此平台接稱為Droplets，很有趣的設定) 要前往ACCOUNT-&gt;Settings-&gt;Security-&gt;SSH keys當中設定 (很難找找很久))，但設定完總是無法遠端連線(這邊嘗試過ssh-keygen以及puttygen兩種方式，皆失敗)，一直出現<a href="https://blog.csdn.net/qq_36523839/article/details/78885216" target="_blank" rel="noopener">Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password)</a>警告，後來使用Ubuntu<br>+puttygen很快就解決了所有問題，也透過<a href="https://www.opencli.com/linux/ubuntu-16-04-install-nginx-mysql-php-lemp" target="_blank" rel="noopener">Ubuntu 16.04 安裝 Nginx, MySQL, PHP (LEMP)</a>這篇文章解決了 nginx-mysql-php 三項安裝，測試過後準備進行Laravel以及Vue.js框架建設，<br>但此時已經深夜2:19分，晚安。</p>
 ]]></content>
       <categories>
         <category>DigitalOcean</category>
@@ -41,6 +43,8 @@
     <title>30天API學習日誌 - 0</title>
     <url>/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-0/</url>
     <content><![CDATA[<h2 id="起由"><a href="#起由" class="headerlink" title="起由"></a>起由</h2><p>在公司低靡的環境下，試圖找尋學習的機會，並且在練習中習得新技能，目前舊有技能為以下列表</p>
+<a id="more"></a>
+
 <ul>
 <li>模組化程式經驗</li>
 <li>平台系統分析</li>
