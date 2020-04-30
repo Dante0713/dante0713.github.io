@@ -3,7 +3,7 @@
   <entry>
     <title>30天API學習日誌 - 3</title>
     <url>/2020/05/01/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-3/</url>
-    <content><![CDATA[<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><p>今天建立web api 內容，參照youtube影片<a href="https://www.youtube.com/watch?v=6qfE-lwRLuY" target="_blank" rel="noopener">Laravel 6 Api tutorial #1 basic API</a>進行學習，<br>在進入之前，系統頁面告訴我他找不到/var/vision-bank/storage/logs/laravel.log檔案，以及權限不足問題，這是在建立laravel時沒有初始化cache,log的結果，使用指令</p>
+    <content><![CDATA[<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><p>今天建立web api 內容，參照youtube影片<a href="https://www.youtube.com/watch?v=6qfE-lwRLuY" target="_blank" rel="noopener">Laravel 6 Api tutorial #1 basic API</a>進行學習<a id="more"></a>，<br>在進入之前，系統頁面告訴我他找不到/var/vision-bank/storage/logs/laravel.log檔案，以及權限不足問題，這是在建立laravel時沒有初始化cache,log的結果，使用指令</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#php artisan config:cache</span><br><span class="line">#php artisan config:clear</span><br><span class="line">#composer dump-autoload -o</span><br></pre></td></tr></table></figure>
 
 <p>告訴laravel你要啟用config即可自動創造log檔，記得設定好權限給網頁開啟應該就沒有問題了</p>
