@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>30天API學習日誌 - 1</title>
-    <url>/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/</url>
-    <content><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access console window下command，其過程總是延遲之後決定回頭設定ssh key</p>
-<a id="more"></a>
-<p>(注意: 在建立好的Droplets (機器在此平台接稱為Droplets，很有趣的設定) 要前往ACCOUNT-&gt;Settings-&gt;Security-&gt;SSH keys當中設定 (很難找找很久))，但設定完總是無法遠端連線(這邊嘗試過ssh-keygen以及puttygen兩種方式，皆失敗)，一直出現<a href="https://blog.csdn.net/qq_36523839/article/details/78885216" target="_blank" rel="noopener">Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password)</a>警告，後來使用Ubuntu<br>+puttygen很快就解決了所有問題，也透過<a href="https://www.opencli.com/linux/ubuntu-16-04-install-nginx-mysql-php-lemp" target="_blank" rel="noopener">Ubuntu 16.04 安裝 Nginx, MySQL, PHP (LEMP)</a>這篇文章解決了 nginx-mysql-php 三項安裝，測試過後準備進行Laravel以及Vue.js框架建設，<br>但此時已經深夜2:19分，晚安。</p>
-]]></content>
-      <categories>
-        <category>DigitalOcean</category>
-      </categories>
-      <tags>
-        <tag>實作</tag>
-        <tag>30天學習日誌</tag>
-        <tag>DigitalOcean</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>30天API學習日誌 - 3</title>
     <url>/2020/05/01/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-3/</url>
     <content><![CDATA[<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><p>今天建立web api 內容，參照youtube影片<a href="https://www.youtube.com/watch?v=6qfE-lwRLuY" target="_blank" rel="noopener">Laravel 6 Api tutorial #1 basic API</a>進行學習<a id="more"></a>，<br>在進入之前，系統頁面告訴我他找不到/var/vision-bank/storage/logs/laravel.log檔案，以及權限不足問題，這是在建立laravel時沒有初始化cache,log的結果，使用指令</p>
@@ -74,7 +58,23 @@
 <p>到這裡已經出現img.1畫面，雖然Database還沒設定好但基本的Laravel資料已可看見，今天就先到這裡。</p>
 ]]></content>
       <categories>
-        <category>WEB API</category>
+        <category>實作課</category>
+      </categories>
+      <tags>
+        <tag>實作</tag>
+        <tag>30天學習日誌</tag>
+        <tag>DigitalOcean</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>30天API學習日誌 - 1</title>
+    <url>/2020/04/30/30%E5%A4%A9API%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C-1/</url>
+    <content><![CDATA[<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>原本在DigitalOcean使用centos進行架設，當時沒想到使用ssh連接，反而用系統中的access console window下command，其過程總是延遲之後決定回頭設定ssh key</p>
+<a id="more"></a>
+<p>(注意: 在建立好的Droplets (機器在此平台接稱為Droplets，很有趣的設定) 要前往ACCOUNT-&gt;Settings-&gt;Security-&gt;SSH keys當中設定 (很難找找很久))，但設定完總是無法遠端連線(這邊嘗試過ssh-keygen以及puttygen兩種方式，皆失敗)，一直出現<a href="https://blog.csdn.net/qq_36523839/article/details/78885216" target="_blank" rel="noopener">Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password)</a>警告，後來使用Ubuntu<br>+puttygen很快就解決了所有問題，也透過<a href="https://www.opencli.com/linux/ubuntu-16-04-install-nginx-mysql-php-lemp" target="_blank" rel="noopener">Ubuntu 16.04 安裝 Nginx, MySQL, PHP (LEMP)</a>這篇文章解決了 nginx-mysql-php 三項安裝，測試過後準備進行Laravel以及Vue.js框架建設，<br>但此時已經深夜2:19分，晚安。</p>
+]]></content>
+      <categories>
+        <category>實作課</category>
       </categories>
       <tags>
         <tag>實作</tag>
@@ -101,7 +101,7 @@
 <p>使用機器: DigitalOcean 15美元 Ubuntu 18.04.3<br>遠端操控: putty<br>前端引擎: vue =&gt; <a href="https://5xruby.tw/posts/how-to-create-maskmap-by-vuejs-and-osm/?fbclid=IwAR26ae2QYi_gMiUZxNHMGtD3gtMiQ7SvnveIr3lRdKNacPOg7olzrPXIWNc" target="_blank" rel="noopener">Vue 口罩地圖實作練習</a><br>後端web api: Laravel =&gt; <a href="https://laravel.tw/docs/4.2/quick#installation" target="_blank" rel="noopener">Laravel安裝</a>, <a href="https://www.youtube.com/watch?v=6qfE-lwRLuY&list=PL8p2I9GklV44rius9tPPXxPnuH0Yb27B4" target="_blank" rel="noopener">Laravel WEB API Tutorial</a></p>
 ]]></content>
       <categories>
-        <category>實作起源</category>
+        <category>實作課</category>
       </categories>
       <tags>
         <tag>實作</tag>

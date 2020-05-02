@@ -328,6 +328,7 @@ ga('send', 'pageview');
   </section>
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
 <!-- <script src="https://geektutu.github.io/hexo-theme-geektutu/js/gitalk.min.js"></script> -->
 <!-- 臨時解決方案 --> <script src="https://unpkg.com/gitalk/dist/gitalk.js"></script>
 <script type="text/javascript">
@@ -337,7 +338,7 @@ ga('send', 'pageview');
         repo: 'dante0713.github.io',
         owner: 'dante0713',
         admin: ['dante0713'],
-        id: window.location.pathname,      // Ensure uniqueness and length less than 50
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
     })
     gitalk.render('gitalk-container')
