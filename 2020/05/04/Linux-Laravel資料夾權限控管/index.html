@@ -141,7 +141,7 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo find &#x2F;path&#x2F;to&#x2F;your&#x2F;laravel&#x2F;root&#x2F;directory -type d -exec chmod 755 &#123;&#125; \;</span><br></pre></td></tr></table></figure>
 
 <p>以上這兩句只差在find的type 一個是f(普通文件) 一個是d(目錄)</p>
-<h3 id="2-將你的用戶設定為資料夾的擁有者"><a href="#2-將你的用戶設定為資料夾的擁有者" class="headerlink" title="2. 將你的用戶設定為資料夾的擁有者"></a>2. 將你的用戶設定為資料夾的擁有者</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R 我的用戶：www-data &#x2F; path &#x2F; to &#x2F; your &#x2F; laravel &#x2F; root &#x2F; directory</span><br></pre></td></tr></table></figure>
+<h3 id="2-將你的用戶設定為資料夾的擁有者"><a href="#2-將你的用戶設定為資料夾的擁有者" class="headerlink" title="2. 將你的用戶設定為資料夾的擁有者"></a>2. 將你的用戶設定為資料夾的擁有者</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R 我的用戶：www-data &#x2F;path&#x2F;to&#x2F;your&#x2F;laravel&#x2F;root&#x2F;directory</span><br></pre></td></tr></table></figure>
 
 <p>此指令當中將擁有者設定為: 我的用戶<br>而擁有的群組設定為: www-data<br>並且加上-R表示遞迴的把所有底下資料夾都設為此權限設定</p>
 <p>之後再更仔細的設定檔案及資料夾的權限代號</p>
